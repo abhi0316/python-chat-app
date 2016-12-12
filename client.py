@@ -1,6 +1,6 @@
 import socket
 c=socket.socket()
-host=socket.gethostname()
+host=socket.gethostname()# if communicating in a lan change socket.gethostname() to ip address of the target computer
 port=1114
 c.connect((host,port))
 while True:
